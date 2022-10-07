@@ -27,11 +27,12 @@ const Cards = () => {
     return (
         <>
             {
-                data?.slice(0, 3).map(item =>
-                    <div key={item.id} className="card bg-white rounded-md w-72 border border-gray-300">
+                data?.slice(0, 2).map(item =>
+                    <div key={item.id} className="card bg-white rounded-md w-full lg:w-72 border border-gray-300">
                         <div className="card-header pb-2">
                             <a href="#" blur-shadow-image="true">
-                                {/* <Image src={item.img} layout='fill' alt="image" /> */}
+                                <Image src={item.img} width={500}
+                                    height={500} alt="image" />
                             </a>
                         </div>
                         <div className="card-body px-4">

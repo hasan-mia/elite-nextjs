@@ -95,6 +95,14 @@
   "resolved" "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   "version" "1.2.1"
 
+"@material-tailwind/html@^1.2.2":
+  "integrity" "sha512-IK8BYPh9Bc0i7UTRXgOago1/2C2sPj9YRXPrwVGf/z225u1190UBMzpcBm5eKcmpjhpS3IYNqNCoNRSpjbfiZg=="
+  "resolved" "https://registry.npmjs.org/@material-tailwind/html/-/html-1.2.2.tgz"
+  "version" "1.2.2"
+  dependencies:
+    "deepmerge" "^4.2.2"
+    "material-ripple-effects" "^2.0.1"
+
 "@material-tailwind/react@^1.2.4":
   "integrity" "sha512-cDmdOEyg/uekLtUtjxPzgvqfkZdyZUDR2gpIIWd6ZSpfPprSHHBvzr92TtIx59+NlX3l3Fh+6702qwGmdRvyqA=="
   "resolved" "https://registry.npmjs.org/@material-tailwind/react/-/react-1.2.4.tgz"

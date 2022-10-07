@@ -1,11 +1,7 @@
 import { useState, useEffect } from "react";
-import {
-    Navbar,
-    MobileNav,
-    Typography,
-    Button,
-    IconButton,
-} from "@material-tailwind/react";
+import { Navbar, MobileNav, Typography, Button, IconButton, Input, Select, Option, } from "@material-tailwind/react";
+import logo from '../assets/logo.png'
+import Image from "next/image";
 const Header = () => {
     const [openNav, setOpenNav] = useState(false);
 
@@ -18,16 +14,30 @@ const Header = () => {
 
     const navList = (
         <div className="flex flex-col lg:flex-row justify-start lg:justify-between">
-            <div className="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-6">
+            <div className="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-6 mr-0 lg:mr-48">
                 <Typography as="li" variant="small" color="blue-gray" className="p-1 font-normal">
                     <a href="#" className="flex items-center">
                         Pages
                     </a>
                 </Typography>
+                <>
+                    <Select variant="outlined" label="Select Version" className="bg-white">
+                        <Option>Tailwind HTML</Option>
+                        <Option>Tailwind React</Option>
+                        <Option>Tailwind Vue</Option>
+                        <Option>Tailwind Angular</Option>
+                        <Option>Tailwind Svelte</Option>
+                    </Select>
+                    <Input label="Input With Icon" icon={<i className="fas fa-search" />} />
+                </>
             </div>
             <div className="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-6">
-                <Button variant="gradient" size="sm" className="hidden lg:inline-block">
-                    <span>Buy Now</span>
+                <a className="text-gray-600"><i className="fal fa-file text-xl"></i></a>
+                <a className="text-gray-600"><i className="fal fa-bell text-xl"></i></a>
+                <a className="text-gray-600"><i className="fal fa-envelope text-xl"></i></a>
+                <a className="text-gray-600"><i className="fal fa-user text-xl"></i></a>
+                <Button size="sm" className="hidden lg:inline-block  bg-pink-500 py-2 text-lg">
+                    <span>Upload all related</span>
                 </Button>
             </div>
         </div>
@@ -37,7 +47,8 @@ const Header = () => {
             <Navbar className="mx-auto py-2 lg:px-2 lg:py-4">
                 <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
                     <Typography as="a" href="#" variant="small" className="mr-4 cursor-pointer py-1.5 font-normal">
-                        <span>The Honest Elite</span>
+                        <Image src={logo} width={100}
+                            height={40} alt="image" />
                     </Typography>
 
                     <div className="hidden lg:block">{navList}</div>

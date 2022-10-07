@@ -21,8 +21,8 @@ export default function Home() {
       <main className='min-h-60 m-0 p-0'>
         <section className='relative'>
           <Map></Map>
-          <div className='absolute bottom-8 left-8 px-4'>
-            <div className="flex gap-2 flex-col lg:flex-row">
+          <div className='relative lg:absolute bottom-0 lg:bottom-0 left-0 lg:left-14 px-4'>
+            <div className="flex gap-2 flex-col lg:flex-row justify-center items-center mx-auto">
               <Cards></Cards>
             </div>
           </div>
