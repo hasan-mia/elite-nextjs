@@ -1,14 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.map-img{
+  width: 100%;
+  height: fit-content;
+}
 .map-selected {
-    fill: #E3DA37;
-  }
-  
-  .map-unselected {
-    fill: #699EAA;
-  }
-  
-  .map-selected:hover, .map-unselected:hover {
-    cursor: pointer;
-  }
+  fill: #E3DA37;
+}
+
+.map-unselected {
+  fill: #699EAA;
+}
+
+.map-selected:hover,
+.map-unselected:hover {
+  cursor: pointer;
+}
